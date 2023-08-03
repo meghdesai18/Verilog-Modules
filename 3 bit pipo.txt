@@ -1,0 +1,18 @@
+3 bit pipo
+
+
+module pipo(
+	input [2:0] in,
+	input rst,
+	input clk,
+	output [2:0] a,
+);
+
+
+always @(posedge clk) begin
+	if(rst)
+	   a<=3'b000;
+	else
+	   a=in;
+end
+endmodule 
